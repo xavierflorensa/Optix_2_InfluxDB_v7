@@ -1,9 +1,9 @@
 ﻿Creating a REST API with Optix
 
 # Contents
-[1.	GET request	1](#_toc153306524)
+[1.	GET request](#_toc153306524)
 
-[2.	Installing InfluxDB on windows	13](#_toc153306525)
+[2.	Installing InfluxDB on windows](#_toc153306525)
 
 [2.1.	Inject your first data with node-red	16](#_toc153306526)
 
@@ -125,7 +125,7 @@ We have created a API Rest client to perform a GET Http request
 As you can see on this video
 
 <https://youtu.be/-jf5SwSq8Us>
-1. # <a name="_toc153306525"></a>Installing InfluxDB on windows
+# <a name="_toc153306525"></a>2. Installing InfluxDB on windows
 
 Using PowerShell in Administrator mode
 
@@ -198,11 +198,10 @@ Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7
 
 Let’s do this from Node-RED
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.036.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 036](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/e014b697-ca6a-44be-bda0-5fbb28420393)
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 037](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/2d220228-9400-496c-b9b6-c950300bdec7)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.037.png)
 
 msg.payload = "plc\_data,host=host1 IoT\_data=1234";
 
@@ -216,19 +215,14 @@ msg.headers['Accept'] = 'application/json';
 
 return msg;
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.038.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 038](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/fce2a548-edda-47c0-b013-5e64d9b6ce0a)
 
 Success
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 039](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/74aed00e-8c15-4355-8c17-011fbde665c9)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.039.png)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.040.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 040](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/5c81dce5-5a17-4397-9b04-1b359e18f045)
 
 Now, let’s try to do this from Factory Talk Optix
 1. # <a name="_toc153306528"></a>POST request to local InfluxDB
@@ -238,21 +232,16 @@ API token example
 
 c4K4HCsdkgH\_9Vv1zBDLJ2ay8QR9ORkYTIPTclHo7PI8--BPcuhEBQkb0sl5QCbAEVozZgzuA9vWk2iHnYxijg==
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.041.png)
-
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 041](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/fc848570-c6f5-4d63-a92c-31bdcffd12d8)
 curl -POST "http://127.0.0.1:8086/api/v2/write?org=Risoul&bucket=SEMINARI&precision=s" --header "Authorization: Token 3fIg3FPeLRzm3nALax4VZdBLW4wGqUUbFhrHsSzBG9wSiiDyMVuuwj\_9hKwb0v2xEi\_r7K\_VhndhDEdwQTiR9g==" --data-raw "optix,host=host1 IoT\_data=333"
 
 With this result
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.042.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 042](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/2c136283-296d-4183-976f-2c89890a7ea8)
 
 Build same project as before but with POST method
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.043.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 043](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/5f957042-1dd2-4dad-9c34-9ea7b95c53ac)
 
 **apiUrl**
 
@@ -270,13 +259,9 @@ plc\_data,host=host1 IoT\_data=232
 
 text/plain
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 044](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/cc4e88ba-c657-4cb1-9352-e207bff86822)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.044.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.045.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 045](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/7a48d6c5-43b1-4a9d-bb8d-fae9bf1f030c)
 
 As you can see here
 
@@ -287,27 +272,22 @@ You only have to change the URL address, organization, etc, and pay attention to
 
 Local injection
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.046.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 046](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/8d4017de-fbba-4d0a-8c3d-54a3afdffa5f)
 
 Remote injection
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.047.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 047](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/6e7d0a88-f8b0-41e2-a220-5c3b0f64a830)
+
 
 So if you do so, you will have success
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 048](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/c0bff68f-df0c-4552-9625-4cdcbd62aa79)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.048.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.049.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 049](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/71dbb24b-7d17-4806-b406-fcbadcb39280)
 
 But if you do not make the change from Bearer to Token, you will get this error
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.050.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 050](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/1813fc53-1208-4e82-9ff0-5079a2c715bf)
 
 
 
