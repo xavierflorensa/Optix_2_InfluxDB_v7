@@ -39,41 +39,31 @@ Click on the button to see the properties and add a Mouse Click event with the U
 
 First of all we have to test these API URL, we are using node red here, to create an API that returns a random number between 1 and 10
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 006](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/790457d8-1012-4709-b12d-f1b0d0481fa7)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.006.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 007](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/84679676-534b-48ad-9efd-57adceb3dcc6)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.007.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.008.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 008](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/731b864f-11bb-4df8-8963-1ccfbce585db)
 
 Now let’s test the Optix runtime
 
 This is working fine
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.009.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 009](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/c3228eeb-75f9-4e3b-b006-38b27dcba02a)
 
 But we need to get the data on Optix
 
 Let’s open the C# script
 
-![A screenshot of a computer screen
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.010.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 010](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/70d8623f-4815-4e55-b036-8d94cd81f4c2)
 
 Let’s create a new variable to store the response data
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.011.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 011](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/044c1030-04bf-4a7e-b744-55284b4d148b)
 
 And change variable type
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.012.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 012](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/56d3db2a-c05f-4e46-8ed6-072d304d84d6)
 
 Now introduce the variable somehow on the script
 
@@ -87,21 +77,15 @@ Were response is the result of the Http request
 
 We can introduce our variable for instance here
 
-![A computer screen with text
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.013.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 013](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/1a6c3f7d-c86f-4d85-be91-f5b29337d34f)
 
 Like this
 
-![A screen shot of a computer code
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.014.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 014](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/d0ac6afa-27ba-4f70-9332-42e5afd081fb)
 
 Save the file
 
-![A screenshot of a computer program
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.015.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 015](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/7a7d772e-a7b4-416c-a528-7f207ff996e5)
 
 2023-12-08 09:17:07.807;NetHelper;222;Warning;16;User .NET solution failed to build:
 
@@ -111,43 +95,30 @@ Let’s correct this
 
 Now introduce a text box
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.016.png)
-
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 016](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/b205f163-65a0-455d-9f6f-23a7cb14ef2c)
 And link to Variable1
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 017](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/c8af1e77-3421-42fa-a58f-be14ca73cf50)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.017.png)
-
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.018.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.019.png)
-
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 018](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/0d8b5600-0501-48dc-8aab-d8eedc1d64ab)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 019](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/19eb2b97-c19b-470b-a200-3af88dfdc973)
 Let’s test the application
 
-![A screenshot of a software
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.020.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 020](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/9845678d-bed6-4dec-9779-8feefe09dc3c)
 
 Voilà
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.021.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 021](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/9ec225b8-2351-4ab6-bc35-f37a816bc487)
 
 Not let’s try to get the http response on that Textbox
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.022.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 022](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/8b884393-ca29-479f-a1c7-20a81e0e5f2f)
 
 Voilà, it works
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.023.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 023](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/56e2a3b8-917b-46f2-a86c-32efb3969d94)
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.024.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 024](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/81a96b09-f312-43c4-9313-5040e0fbec7e)
 
 We have created a API Rest client to perform a GET Http request
 
@@ -168,9 +139,7 @@ From this guide
 
 <https://portal.influxdata.com/downloads/>
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.025.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 025](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/4d6f26ab-55ec-469a-bdc3-941ab5a1150e)
 
 \> cd -Path 'C:\Program Files\InfluxData\influxdb'
 
