@@ -6,29 +6,29 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.2
- CoreVersion: 2.0
+ ProductVersion: 1.4
+ CoreVersion: 3.0
  Dependencies:
   2:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 1.1
+   Version: 1.2
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 2.1
+   Version: 3.1
   4:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.0
+   Version: 1.1
   5:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 2.0
+   Version: 12.0
   6:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 2.0
+   Version: 12.0
   7:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
@@ -40,11 +40,11 @@ Project:
   9:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 4.2
+   Version: 5.3
   10:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 4.2
+   Version: 4.4
   11:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI
@@ -57,5 +57,16 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 1.0
+ Statistics:
+  TotalNodeCount: 218
+  Objects: 81
+  ObjectTypes: 1
+  Variables: 133
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 3
+  References: 0
+  ReferenceTypes: 0
+  Files: 19
  Nodes:
  - File: Nodes/Optix_2_InfluxDB_v7.yaml

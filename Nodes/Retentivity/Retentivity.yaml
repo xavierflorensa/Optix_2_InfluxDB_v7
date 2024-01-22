@@ -10,7 +10,7 @@ Children:
     - Name: Node1
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"69b63ec1680bb66226168ed8c16521a0","Namespace":14}
+      Value: "/Objects/Optix_2_InfluxDB_v7/Security"
       Children:
       - Name: Kind
         Type: PropertyType
@@ -39,7 +39,7 @@ Children:
     - Name: Node1
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"3293e7cd8de0bb06cc725e017a984470","Namespace":14}
+      Value: "/Objects/Optix_2_InfluxDB_v7/Alarms"
       Children:
       - Name: Kind
         Type: PropertyType

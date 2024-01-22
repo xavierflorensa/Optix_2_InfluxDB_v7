@@ -5,32 +5,186 @@ Children:
   Id: g=8da2b5865c73184b748c69f73d34bedf
   Type: StyleSheet
   Children:
-  - Name: ButtonStyle
-    Type: ButtonStyle
-  - Name: ButtonAccentStyle
-    Type: ButtonStyle
-  - Name: DataInputStyle
-    Type: DataInputStyle
-  - Name: SwitchStyle
-    Type: SwitchStyle
-  - Name: GaugeStyle
-    Type: GaugeStyle
-  - Name: NavigationPanelStyle
-    Type: NavigationPanelStyle
-  - Name: ChartStyle
-    Type: ChartStyle
-  - Name: DataListStyle
-    Type: DataListStyle
-  - Name: ToolTipStyle
-    Type: ToolTipStyle
-  - Name: ScrollBarStyle
-    Type: ScrollBarStyle
-  - Name: AccordionStyle
-    Type: AccordionStyle
-  - Name: PieChartStyle
-    Type: PieChartStyle
-  - Name: HistogramChartStyle
-    Type: HistogramChartStyle
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 0.0
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
@@ -42,30 +196,30 @@ Children:
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"01a7e8933afd7c95fe894b0859308138","Namespace":14}
+    Value: "/Objects/Optix_2_InfluxDB_v7/UI/MainWindow"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":12,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
   - Name: StyleSheet
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"8da2b5865c73184b748c69f73d34bedf","Namespace":14}
+    Value: "/Objects/Optix_2_InfluxDB_v7/UI/DefaultStyleSheet"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":447,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: {"Id":46,"Namespace":1}
+    Value: "/Objects/Users/Anonymous"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":14,"Namespace":1}
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
   - Name: Sessions
     Type: BaseObjectType
 - Name: MainWindow
@@ -126,7 +280,7 @@ Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":5}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -136,12 +290,12 @@ Children:
           - Name: ns=3;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"154cd17b10c82fc5e8d5f242ccba7bf2","Namespace":14}
+            Value: "/Objects/Optix_2_InfluxDB_v7/NetLogic/RESTApiClient"
             Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: ns=3;Method
             Type: BaseDataVariableType
             DataType: String
@@ -255,7 +409,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=14;g=db4bf672-52dc-aad8-611c-f27f672c0212}"
+        Value: "/Objects/Optix_2_InfluxDB_v7/Model/Variable1"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -293,7 +447,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=14;g=9e52b709-1958-0bce-324d-a4a27bfc90b6}"
+        Value: "/Objects/Optix_2_InfluxDB_v7/Model/Variable2"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -364,7 +518,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=14;g=19a67394-8c23-9740-25f0-710e2b4f70ec}"
+        Value: "/Objects/Optix_2_InfluxDB_v7/Model/Variable3"
         Children:
         - Name: Mode
           Type: BaseVariableType
