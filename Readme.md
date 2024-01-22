@@ -15,30 +15,27 @@
 
 
 
-1. # <a name="_toc153306524"></a>GET request
+# <a name="_toc153306524"></a>1. GET request
 Create a new Optix project
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.001.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 001](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/036fef87-265b-40e6-8668-028b403abd71)
 
 Go to libraries
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.002.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 002](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/6539cca2-176f-40fb-802b-7af41fbb4bbd)
 
 Drag and Drop REST API Client to NetLogic
 
-![](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.003.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 003](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/9603a5e2-814d-4f36-ab81-d47ecd66e564)
 
 Now let’s go to UI Main window and add a button
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.004.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 004](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/23f7be58-5c6d-4d8a-af43-bc476082c59d)
 
 Click on the button to see the properties and add a Mouse Click event with the URL of the API
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 005](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/3ec74a91-9cba-472f-a116-3433e9f67925)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.005.png)
 
 First of all we have to test these API URL, we are using node red here, to create an API that returns a random number between 1 and 10
 
