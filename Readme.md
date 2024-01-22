@@ -157,15 +157,11 @@ xavier
 
 Password
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.026.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 026](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/29d84063-3730-45b2-9e7d-c042a47af0af)
 
 Start building your influxdb use cases
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.027.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 027](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/3091a8cb-04d4-4d7c-85f3-45affc1111eb)
 
 API tocken
 
@@ -173,31 +169,21 @@ MwQvFkNF8uI\_Yx8327ohwgDG2qHBhO9ZbAqbpFPcFRX6amE9SooSyxAiA9zofuxj8c\_C26cf-zGmMe
 
 Select Quickstart
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.028.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 028](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/e0989bd3-01d6-492b-88c2-b77edd0d924d)
 1. ## <a name="_toc151984162"></a><a name="_toc153306526"></a>Inject your first data with node-red
-![A close-up of a tag
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 029](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/2aaac974-2bc9-41a0-a67a-562839abd13b)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.029.png)
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 030](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/61f99f7f-4df9-48c2-8e8e-b0f3ea0c68c7)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.030.png)
 
 Let’s try to inject to INfluxDB using an Http request
 
-![A screenshot of a computer
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 031](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/14d8495c-cd5c-4ec7-87d5-1e3141d9ce42)
 
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.031.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 032](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/d4970e06-2a92-4739-baf2-48c63795a0e3)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.032.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.033.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 033](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/7a4f56b0-fb46-4656-9e76-7d50e809035a)
 1. ## <a name="_toc153306527"></a>Injecting to InfluxDB from command line
 Now let’s try to build the http request ourselves. From windows command line
 
@@ -206,10 +192,9 @@ curl -POST "http://127.0.0.1:8086/api/v2/write?org=Risoul&bucket=PLC&precision=s
 ![A black screen with white text
 
 Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.034.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 034](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/bf7340dd-92e2-42e6-b3be-5bcef0d15b4f)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.035.png)
+![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 035](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/0e51c26a-10ef-4cbc-b6fc-172322a50a05)
 
 Let’s do this from Node-RED
 
