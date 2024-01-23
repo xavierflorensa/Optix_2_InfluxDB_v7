@@ -197,9 +197,6 @@ Now let’s try to build the http request ourselves. From windows command line
 
 curl -POST "http://127.0.0.1:8086/api/v2/write?org=Risoul&bucket=PLC&precision=s" --header "Authorization: Token MwQvFkNF8uI\_Yx8327ohwgDG2qHBhO9ZbAqbpFPcFRX6amE9SooSyxAiA9zofuxj8c\_C26cf-zGmMeLyGYKgHA==" --data-raw "plc\_data,host=host1 IoT\_data=2324"
 
-![A black screen with white text
-
-Description automatically generated](Aspose.Words.a0799ba4-5aa3-4328-a3eb-fed0b7901e56.034.png)
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 034](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/bf7340dd-92e2-42e6-b3be-5bcef0d15b4f)
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 035](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/0e51c26a-10ef-4cbc-b6fc-172322a50a05)
