@@ -5,11 +5,11 @@
 
 [2.	Installing InfluxDB on windows](#_toc153306525)
 
-[2.1.	Inject your first data with node-red	16](#_toc153306526)
+[2.1.	Inject your first data with node-red](#_toc153306526)
 
-[2.2.	Injecting to InfluxDB from command line	18](#_toc153306527)
+[2.2.	Injecting to InfluxDB from command line](#_toc153306527)
 
-[3.	POST request to local InfluxDB	21](#_toc153306528)
+[3.	POST request to local InfluxDB](#_toc153306528)
 
 [4.	POST request to remote InfluxDB	24](#_toc153306529)
 
@@ -170,7 +170,7 @@ MwQvFkNF8uI\_Yx8327ohwgDG2qHBhO9ZbAqbpFPcFRX6amE9SooSyxAiA9zofuxj8c\_C26cf-zGmMe
 Select Quickstart
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 028](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/e0989bd3-01d6-492b-88c2-b77edd0d924d)
-1. ## <a name="_toc151984162"></a><a name="_toc153306526"></a>Inject your first data with node-red
+## <a name="_toc151984162"></a><a name="_toc153306526"></a>2.1Inject your first data with node-red
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 029](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/2aaac974-2bc9-41a0-a67a-562839abd13b)
 
 
@@ -184,7 +184,7 @@ Let’s try to inject to INfluxDB using an Http request
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 032](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/d4970e06-2a92-4739-baf2-48c63795a0e3)
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 033](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/7a4f56b0-fb46-4656-9e76-7d50e809035a)
-1. ## <a name="_toc153306527"></a>Injecting to InfluxDB from command line
+## <a name="_toc153306527"></a>2.2 Injecting to InfluxDB from command line
 Now let’s try to build the http request ourselves. From windows command line
 
 curl -POST "http://127.0.0.1:8086/api/v2/write?org=Risoul&bucket=PLC&precision=s" --header "Authorization: Token MwQvFkNF8uI\_Yx8327ohwgDG2qHBhO9ZbAqbpFPcFRX6amE9SooSyxAiA9zofuxj8c\_C26cf-zGmMeLyGYKgHA==" --data-raw "plc\_data,host=host1 IoT\_data=2324"
@@ -202,7 +202,7 @@ Let’s do this from Node-RED
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 037](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/2d220228-9400-496c-b9b6-c950300bdec7)
 
-
+```javascript
 msg.payload = "plc\_data,host=host1 IoT\_data=1234";
 
 msg.headers = {};
@@ -214,7 +214,7 @@ msg.headers['Content-Type'] = 'text/plain; charset=utf-8';
 msg.headers['Accept'] = 'application/json';
 
 return msg;
-
+```
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 038](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/fce2a548-edda-47c0-b013-5e64d9b6ce0a)
 
 Success
@@ -225,7 +225,7 @@ Success
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 040](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/5c81dce5-5a17-4397-9b04-1b359e18f045)
 
 Now, let’s try to do this from Factory Talk Optix
-1. # <a name="_toc153306528"></a>POST request to local InfluxDB
+# <a name="_toc153306528"></a>3. POST request to local InfluxDB
 First let’s try the right http request
 
 API token example
@@ -266,7 +266,7 @@ text/plain
 As you can see here
 
 <https://youtu.be/nqSctOoieOk>
-1. # <a name="_toc153306529"></a>POST request to remote InfluxDB
+# <a name="_toc153306529"></a>4. POST request to remote InfluxDB
 
 You only have to change the URL address, organization, etc, and pay attention to this little change
 
