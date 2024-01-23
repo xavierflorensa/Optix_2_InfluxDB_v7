@@ -176,7 +176,9 @@ MwQvFkNF8uI\_Yx8327ohwgDG2qHBhO9ZbAqbpFPcFRX6amE9SooSyxAiA9zofuxj8c\_C26cf-zGmMe
 Select Quickstart
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 028](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/e0989bd3-01d6-492b-88c2-b77edd0d924d)
-## <a name="_toc151984162"></a><a name="_toc153306526"></a>2.1Inject your first data with node-red
+
+## <a name="_toc151984162"></a><a name="_toc153306526"></a>2.1 Inject your first data with node-red
+
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 029](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/2aaac974-2bc9-41a0-a67a-562839abd13b)
 
 
