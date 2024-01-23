@@ -96,12 +96,14 @@ Let’s correct this
 Now introduce a text box
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 016](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/b205f163-65a0-455d-9f6f-23a7cb14ef2c)
+
 And link to Variable1
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 017](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/c8af1e77-3421-42fa-a58f-be14ca73cf50)
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 018](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/0d8b5600-0501-48dc-8aab-d8eedc1d64ab)
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 019](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/19eb2b97-c19b-470b-a200-3af88dfdc973)
+
 Let’s test the application
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 020](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/9845678d-bed6-4dec-9779-8feefe09dc3c)
@@ -300,4 +302,4 @@ But if you do not make the change from Bearer to Token, you will get this error
 
 
 
-Xavier FlorensaAutomation SpecialistRisoul Ibérica
+Xavier Florensa      Automation Specialist      Risoul Ibérica
