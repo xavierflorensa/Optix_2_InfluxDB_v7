@@ -233,6 +233,7 @@ API token example
 c4K4HCsdkgH\_9Vv1zBDLJ2ay8QR9ORkYTIPTclHo7PI8--BPcuhEBQkb0sl5QCbAEVozZgzuA9vWk2iHnYxijg==
 
 ![Aspose Words a0799ba4-5aa3-4328-a3eb-fed0b7901e56 041](https://github.com/xavierflorensa/Optix_2_InfluxDB_v7/assets/55208134/fc848570-c6f5-4d63-a92c-31bdcffd12d8)
+
 curl -POST "http://127.0.0.1:8086/api/v2/write?org=Risoul&bucket=SEMINARI&precision=s" --header "Authorization: Token 3fIg3FPeLRzm3nALax4VZdBLW4wGqUUbFhrHsSzBG9wSiiDyMVuuwj\_9hKwb0v2xEi\_r7K\_VhndhDEdwQTiR9g==" --data-raw "optix,host=host1 IoT\_data=333"
 
 With this result
