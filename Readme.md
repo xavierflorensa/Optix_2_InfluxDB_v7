@@ -67,11 +67,15 @@ And change variable type
 
 Now introduce the variable somehow on the script
 
+```C#
 var Variable1 = Project.Current.GetVariable("Model/Variable1");
+```
 
 So you can update the variable value like this
 
+```C#
 Variable1.Value = System.Text.Encoding.UTF8.GetString(Response); 
+```
 
 Were response is the result of the Http request
 
